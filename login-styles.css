@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@300;400&family=Tangerine&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:  #eeeee7;
+    overflow: hidden;
+}
+
+.coupon {
+    text-align: center;
+   
+}
+
+.coupon h2 {
+    background: -webkit-linear-gradient(#4ce2e2, #eee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(144, 205, 205, 0.3);
+    font-family: 'Cookie', cursive;
+    font-size: 2rem;
+}
+
+.coupon h1 span {
+    color: #d40636;
+}
+
+.coupon p, .coupon h1 {
+    color: #323230;
+}
+
+.coupon p {
+    font-size: 1.2rem;
+}
+
+/* NAV BAR */
+/* .panel {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.panel.welcome ul li {
+    list-style-type: none;
+    text-align: center;
+   }
+
+   .panel.welcome ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+}
+
+.panel.welcome {
+    background-color: #323230;
+    padding: 20px 60px;
+    grid-auto-rows: 1fr;
+}
+
+.panel.welcome nav a {
+    color: #a8a8a8;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.panel.welcome nav a:hover {
+    color: #eeeee7;
+    border-bottom: 1px solid #eeeee7;
+}
+
+h1 {
+    margin-top: 50px;
+} */
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<< END OF NAV BAR >>>>>>>>>>>>>>>>>>>>>>>>>>. */
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-color: #323230;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+/* >>>>>>>>>>>>>> MEDIA QUERY FOR LOGIN BOX >>>>>>>>>>>>>>..*/
+@media screen and (max-width: 530px) {
+    .login-box {
+        width: 60%;
+    }
+
+}/* >>>>>>>>>>>>>> END MEDIA QUERY FOR LOGIN BOX >>>>>>>>>>>>>>..*/
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #eeeee7;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #eeeee7;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: #eeeee7;
+    transition: 0.5;
+    pointer-events: none;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    font-size: 12px;
+    color: #03e9f4;
+}
+
+.login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5;
+    margin-top: 40px;
+    letter-spacing: 4px;
+}
+
+.login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4 0 0 25px #03e9f4 0 0 50px #03e9f4 0 0 100px #03e9f4;
+}
+
+.login-box a span {
+    position: absolute;
+    display: block;
+
+}
+
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f2eee3);
+    animation: btn 1s linear infinite;
+}
+
+@keyframes btn {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f2eee3);
+    animation: btn2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f2eee3);
+    animation: btn3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f2eee3);
+    animation: btn4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+/* >>>>>>>>>>>>>>>>>>  FOOTER PANEL >>>>>>>>>>>>> */
+
+.footer-panel {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+}
+
+.copyright-section, .copyright-panel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright-section li {
+    list-style-type: none;
+    padding-left: 9px;
+}
+
+.copyright-section a {
+    text-decoration: none;
+    color: #323230;
+}
+
+/* >>>>>>>>>>>> LEFT & RIGHT IMAGES */
+.left-image {
+    position: absolute;
+    left: -39%;
+    width: 55%;
+    bottom: 9%;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    opacity: .2;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .8);
+}
+
+.right-image {
+    position: fixed;
+    left: 84%;
+    width: 55%;
+    bottom: 6%;
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    opacity: .2;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .8);
+}
+
+/* >>>>>>>>>>>>>>>>>>>> MEDIA QUERY >>>>>>>>>>>>>>>>>>>>>>> */
+@media screen and (max-width:1110px ) {
+    .left-image, .right-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .copyright-section, .copyright-panel {
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 12px;
+    }
+
+  .none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 424px) {
+.copyright-panel {
+    display: block;
+    max-width: 265px;
+    text-align: center;
+}
+
+.copyright-section {
+    padding-bottom: 20px;
+}
+}
+
+@media screen and (max-width: 406px) {
+ .panel.welcome nav {
+display: flex;
+width: 100%;
+ }   
+}
+
+@media screen and (max-width: 325px) {
+    .panel.welcome nav {
+        font-size: 11px;
+    }  
+}
